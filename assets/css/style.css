@@ -25,9 +25,12 @@ body{
 
 .container-nav .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 74px;
-  width: 1410px;
+  width: 100%;
+  background-color: #FE6900;
+  position: fixed;
+  z-index: 10;
 }
 
 .container-nav .navbar .col{
