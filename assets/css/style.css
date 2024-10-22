@@ -179,3 +179,53 @@ main .cards .c-img .favorite{
 main .cards .c-img .favorite:hover{
   color: red;
 }
+
+/*---------------FOOTER--------------*/
+
+footer{
+  background-color: #1A1A1A;
+}
+
+.container-foot{
+  max-width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.navfoot{
+  width: 1420px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.container-foot .navfoot .col{
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container-foot .navfoot .col h3{
+  text-align: center;
+  font-size: 16px;
+}
+
+.container-foot .navfoot .col a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.container-foot .navfoot .col ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-foot .navfoot .col ul li{
+  padding: 4px;
+  text-align: center;
+  font-size: 24px;
+}
