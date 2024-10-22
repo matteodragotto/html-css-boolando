@@ -101,6 +101,17 @@ main .cards .c-img .sostenibilità{
   font-size: 14px;
 }
 
+main .cards .c-img .sostenibilità-last{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  color: white;
+  background-color: green;
+  z-index: 4;
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
 main .cards .c-img .favorite{
   position: absolute;
   top: 40px;
