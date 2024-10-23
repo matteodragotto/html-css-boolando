@@ -13,42 +13,55 @@ body{
 }
 
 /*-----------------------HEADER----------------*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FE6900;
+  height: 74px;
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
 
 .container-nav{
-  margin: auto;
-  max-width: 100%;
-  height: 74px;
-  background-color: #FE6900;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100%;
 }
 
 .container-nav .navbar{
   display: flex;
-  justify-content: space-around;
-  height: 74px;
-  width: 100%;
-  background-color: #FE6900;
-  position: fixed;
-  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .container-nav .navbar .col{
-  height: 100%;
+  width: calc(100% / 3);
+  margin: 0 4px;
+}
+
+header .col.logo{
+  width: 150px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container-nav .navbar .col ul{
   list-style: none;
-  display: flex;
-  flex-direction: row;
 }
 
 .container-nav .navbar .col ul li{
-  padding: 4px
+  padding: 4px;
+  display: inline-block
 }
 
 .container-nav .navbar .col ul li a{
@@ -58,36 +71,33 @@ body{
   font-weight: bold;
 }
 
-.container-nav .navbar .col img{
-  text-align: center;
-}
-
-
 
 /*----------------------MAIN-----------------------*/
+
+main{
+  padding-top: 74px;
+}
+
 .container{
   margin: 0 auto;
   max-width: 1440px;
   display: flex;
-  flex-direction: column;
-  margin: 60px 250px;
-  
+  flex-direction: column;  
 }
 
 
 .container .row{
   max-width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .container .row .cards{
-  margin: 5px;
+  width: calc(100% / 3);
+  padding: 40px 10px;
 }
 
 main .cards .c-img{
-  max-height: 670px;
-  max-width: 462px;
   position: relative;
 }
 
@@ -133,37 +143,25 @@ strong{
   color: red;
 }
 
-main .cards .c-img .discount{
+main .cards .c-img .badges{
   position: absolute;
   bottom: 40px;
-  left: 0px;
+  left: 0;
+  z-index: 4;
+}
+
+main .cards .c-img .badges .badge{
+  display: inline-block;
   color: white;
   background-color: red;
   z-index: 4;
   padding: 4px 12px;
   font-size: 14px;
+  font-weight: bold;
 }
 
-main .cards .c-img .sostenibilità{
-  position: absolute;
-  bottom: 40px;
-  left: 55px;
-  color: white;
+main .cards .c-img .badges .badge.sostenibilità{  
   background-color: green;
-  z-index: 4;
-  padding: 4px 12px;
-  font-size: 14px;
-}
-
-main .cards .c-img .sostenibilità-last{
-  position: absolute;
-  bottom: 40px;
-  left: 0px;
-  color: white;
-  background-color: green;
-  z-index: 4;
-  padding: 4px 12px;
-  font-size: 14px;
 }
 
 main .cards .c-img .favorite{
